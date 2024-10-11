@@ -1,0 +1,129 @@
+/* Overall Pseudocode Explanation of how this Code functions:
+
+
+Key Details Explained:
+Universal Selector (*):
+
+The universal selector targets all HTML elements on the page.
+This is useful for resetting default browser styles to create a consistent starting point across different browsers.
+Resetting Margin and Padding:
+
+Setting margin: 0; and padding: 0; eliminates any default spacing around elements, which can vary by browser. This helps in achieving a uniform layout.
+This reset is crucial for layout consistency, especially when you want to control spacing and alignment manually.
+Box Sizing (box-sizing: border-box):
+
+The box-sizing property alters how the width and height of elements are calculated.
+By setting box-sizing: border-box;, the padding and border are included in the element's total width and height, making it easier to size elements without worrying about the additional space that padding or borders might add.
+Body Selector:
+
+The body selector (body { ... }) applies styles specifically to the body element of the HTML document, which contains all visible content.
+This is where you set global styles that affect the entire application.
+Font Family:
+
+The font-family property specifies the typeface for the text content. Setting it to Arial, sans-serif means that Arial will be used, and if it’s not available, any other sans-serif font will be used as a fallback.
+Choosing a sans-serif font like Arial enhances readability and gives a modern look to the application.
+Background Color:
+
+The background-color property sets the background color for the entire application. A light gray (#f5f5f5) is chosen here to create a soft contrast with foreground elements, which can help improve readability and visual comfort.
+
+Overall Explanation:
+This CSS code snippet provides a foundational style for your application, 
+ensuring consistent margins and paddings, specifying a clean and readable font, 
+and applying a pleasant background color. 
+
+
+
+
+*/
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+
+
+/*Commented Out, to be Replaced by Other Code:
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+*/
